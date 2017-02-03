@@ -24,7 +24,7 @@ function initAutocomplete() {
         zoom: 10
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    var address = "San Antonio, TX 78205";
+    var address = "San Francisco, CA 94101";
     //geocoder
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({"address": address}, function (results, status) {

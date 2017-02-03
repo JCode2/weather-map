@@ -1,0 +1,7 @@
+Weather Map API
+
+Summary:
+
+1.  Weather map created using HTML, CSS, Bootstrap, Javascript, jQuery, Google Maps API, and Open Weather Map API.
+2.  User can see the weather for the next 3 days at any location.
+3.  When map is initialized the user can search other locations to retrieve the weather forecast for the next three days..
