@@ -180,3 +180,11 @@ body {
     width: 345px;
 }
 
+#disclaimer{
+    color: white;
+}
+
+#disclaimer h1{
+    text-decoration: underline;
+    color: indianred;
+}
