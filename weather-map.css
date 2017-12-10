@@ -16,25 +16,6 @@ body {
     margin-bottom: 5%;
 }
 
-/*#location:hover {*/
-    /*background-color: darkslategray;*/
-    /*color: lightgreen;*/
-/*}*/
-
-/*#winterface:hover {*/
-    /*background-color: darkslategray;*/
-    /*color: lightgreen;*/
-/*}*/
-
-/*#daytwo:hover {*/
-    /*background-color: darkslategrey;*/
-    /*color: lightgreen;*/
-/*}*/
-
-/*#daythree:hover {*/
-    /*background-color: darkslategray;*/
-    /*color: lightgreen;*/
-/*}*/
 #location {
     background-color: whitesmoke;
     color: grey;
@@ -47,73 +28,11 @@ body {
 
 }
 
-#interface {
-    /*margin-top: 5%;*/
-    /*margin-bottom: 5%;*/
-    /*width: 40%;*/
-
-}
-
-/*#today {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*text-align: center;*/
-    /*text-wrap: none;*/
-    /*color: white;*/
-    /*background-color: slategray;*/
-    /*transition: transform 300ms ease-in-out;*/
-    /*width: 50%;*/
-
-/*}*/
-
-/*#daytwo {*/
-    /*display: flex;*/
-    /*justify-content: center space-between;*/
-    /*margin-top: 1.25%;*/
-    /*!*margin-left: 18%;*/
-    /*margin-right: 18%;*!*/
-    /*padding: 2%;*/
-    /*text-align: center;*/
-    /*color: grey;*/
-    /*background-color: whitesmoke;*/
-
-/*}*/
-
-/*#daythree {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*margin-top: 1.25%;*/
-    /*!*margin-left: 18%;*/
-    /*margin-right: 18%;*!*/
-    /*padding: 2%;*/
-    /*text-align: center;*/
-    /*color: grey;*/
-    /*background-color: whitesmoke;*/
-    /*!*transition: transform 300ms ease-in-out;*!*/
-
-
-/*}*/
-
-/*.otherDays{*/
-    /*display: flex;*/
-    /*!*justify-content: center;*!*/
-    /*!*margin-top: 1%;*!*/
-    /*margin-right: 1%;*/
-    /*padding: 2%;*/
-    /*color: grey;*/
-    /*background-color: whitesmoke;*/
-/*}*/
 
 #map {
     height: 400px;
     width: 50%;
     background-color: grey;
-    /*position: relative;
-    display: flex;
-    justify-content: center;*/
-    /*margin-right: 20%;*/
-    /*margin-left: 25%;*/
-
 }
 
 #butsearch {
