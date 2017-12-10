@@ -4,7 +4,7 @@
 
 //http://api.openweathermap.org/data/2.5/weather   http://api.openweathermap.org/data/2.5/forecast?id={}
 function getLocal(latitude, longitude) {
-    $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+    $.get("cors-anywhere.herokuapp.com/http:http://api.openweathermap.org/data/2.5/forecast/daily", {
         APPID: "eda54ecfd2dc648ab68ecd44ce9ecf27",
         lat: latitude,
         lon: longitude,
