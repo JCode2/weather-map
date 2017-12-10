@@ -5,23 +5,24 @@
     <title>Weather API</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="weather-map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body class="container-fluid">
-<div id="interface">
-    <h2 id="location" class="title"></h2>
-    <div id="winterface" class="col-md-4 trigger"></div>
-    <div id="daytwo" class="col-md-4"></div>
-    <div id="daythree" class="col-md-4 trigger2"></div>
-</div>
+<body>
 
-<div id="everythingelse" class="container-fluid">
+
+<div class="theInterface container-fluid animated bounceInUp">
+<h1 class="title">Weather in Your Hood</h1>
+    <span class="col-md-4 col-sm-12 col-xs-12" id="location"></span>
 
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
     <!--<button type="submit" id="butsearch" class="btn btn-default">Search</button>-->
+    <div id="map" class="col-md-6 col-sm-12"></div>
+    <!--<span id="daytwo" class="otherDays col-md-5"></span>-->
+    <!--<span id="daythree" class="otherDays col-md-5"></span>-->
 
-    <div id="map">
-    </div>
 </div>
+
+
 
 <script
         src="https://code.jquery.com/jquery-3.1.1.js"

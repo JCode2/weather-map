@@ -1,102 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
-    font-family: Damascus;
+    font-family: Roboto, sans-serif;
     font-size: 1.65em;
-    background-image: url("stardust.png");
+    background-image: url("weather.png");
 
 }
 
-#map {
+.title{
+    color:#404040;
+}
+
+.theInterface {
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
-#location:hover {
-    background-color: darkslategray;
-    color: lightgreen;
-}
+/*#location:hover {*/
+    /*background-color: darkslategray;*/
+    /*color: lightgreen;*/
+/*}*/
 
-#winterface:hover {
-    background-color: darkslategray;
-    color: lightgreen;
-}
+/*#winterface:hover {*/
+    /*background-color: darkslategray;*/
+    /*color: lightgreen;*/
+/*}*/
 
-#daytwo:hover {
-    background-color: darkslategrey;
-    color: lightgreen;
-}
+/*#daytwo:hover {*/
+    /*background-color: darkslategrey;*/
+    /*color: lightgreen;*/
+/*}*/
 
-#daythree:hover {
-    background-color: darkslategray;
-    color: lightgreen;
-}
+/*#daythree:hover {*/
+    /*background-color: darkslategray;*/
+    /*color: lightgreen;*/
+/*}*/
 #location {
-    background-color: slategray;
-    color: white;
-    margin-left: 35%;
-    margin-right: 35%;
-    padding: 2%;
-    border-radius: 10%;
+    background-color: whitesmoke;
+    color: grey;
+    /*margin-left: 35%;*/
+    /*\margin-right: 35%;*/
+    margin-right: 5px;
+    padding:auto;
+    /*border-radius: 10%;*/
     font-style: oblique;
 
 }
 
 #interface {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    /*margin-top: 5%;*/
+    /*margin-bottom: 5%;*/
+    /*width: 40%;*/
 
 }
 
-#interface h2 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+/*#today {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    /*text-wrap: none;*/
+    /*color: white;*/
+    /*background-color: slategray;*/
+    /*transition: transform 300ms ease-in-out;*/
+    /*width: 50%;*/
 
-#winterface {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    /*margin-left: 18%;
-    margin-right: 18%;*/
-    padding: 1.25%;
-    text-align: center;
-    text-wrap: none;
-    color: white;
-    background-color: slategray;
-    transition: transform 300ms ease-in-out;
+/*}*/
 
-}
+/*#daytwo {*/
+    /*display: flex;*/
+    /*justify-content: center space-between;*/
+    /*margin-top: 1.25%;*/
+    /*!*margin-left: 18%;*/
+    /*margin-right: 18%;*!*/
+    /*padding: 2%;*/
+    /*text-align: center;*/
+    /*color: grey;*/
+    /*background-color: whitesmoke;*/
 
-#daytwo {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.25%;
-    /*margin-left: 18%;
-    margin-right: 18%;*/
-    padding: 2%;
-    text-align: center;
-    text-wrap: none;
-    color: darkslategrey;
-    background-color: lightgreen;
+/*}*/
 
-}
-
-#daythree {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    /*margin-left: 18%;
-    margin-right: 18%;*/
-    padding: 1.25%;
-    text-align: center;
-    text-wrap: none;
-    color: white;
-    background-color: slategray;
-    transition: transform 300ms ease-in-out;
+/*#daythree {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*margin-top: 1.25%;*/
+    /*!*margin-left: 18%;*/
+    /*margin-right: 18%;*!*/
+    /*padding: 2%;*/
+    /*text-align: center;*/
+    /*color: grey;*/
+    /*background-color: whitesmoke;*/
+    /*!*transition: transform 300ms ease-in-out;*!*/
 
 
-}
+/*}*/
+
+/*.otherDays{*/
+    /*display: flex;*/
+    /*!*justify-content: center;*!*/
+    /*!*margin-top: 1%;*!*/
+    /*margin-right: 1%;*/
+    /*padding: 2%;*/
+    /*color: grey;*/
+    /*background-color: whitesmoke;*/
+/*}*/
 
 #map {
     height: 400px;
@@ -105,8 +111,8 @@ body {
     /*position: relative;
     display: flex;
     justify-content: center;*/
-    margin-right: 20%;
-    margin-left: 25%;
+    /*margin-right: 20%;*/
+    /*margin-left: 25%;*/
 
 }
 
@@ -115,22 +121,6 @@ body {
     justify-content: flex-start;
     margin-top: 1%;
 }
-
-/*.trigger {
-    padding: 1.25% 2%
-}
-
-.trigger:hover {
-    transform: translate(100%);
-}
-
-.trigger2 {
-    padding: 1.25%
-}
-
-.trigger2:hover {
-    transform: translate(-100%) scale(1);
-}*/
 
 /*Non-custom CSS*/
 

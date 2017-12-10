@@ -11,10 +11,12 @@ function getLocal(latitude, longitude) {
         units: "imperial"
     }).done(function (data) {
         console.log(data);
-        $("#location").html(data.city.name + " " + data.city.country);
-        $("#winterface").html(" Temperature: " + data.list[0].temp.day + " F" + " <p> Morning Temp: " + data.list[0].temp.morn + " F" + " <p> Evening Temp: " + data.list[0].temp.eve + " F" + "</p>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>");
-        $("#daytwo").html(" Temperature: " + data.list[1].temp.day + " F" + " <p> Morning Temp: " + data.list[1].temp.morn + " F" + " <p> Evening Temp: " + data.list[1].temp.eve + " F" + "</p>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>");
-        $("#daythree").html(" Temperature: " + data.list[2].temp.day + " F" + " <p> Morning Temp: " + data.list[2].temp.morn + " F" + " <p> Evening Temp: " + data.list[2].temp.eve + " F" + "</p>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>");
+        $("#location").html("<h2 style='color: cadetblue'>Today in </h2>" + "<h3>" + data.city.name + " " + data.city.country+ "</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + " <h4>Temperature: " + data.list[0].temp.day + " F</h4>" + " <h4> Morning: " + data.list[0].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[0].temp.eve + " F" + "</h4>" +
+            "<div><h3 style='color: cadetblue'>Tomorrow</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[1].temp.day + " F" + " <h4> Morning: " + data.list[1].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[1].temp.eve + " F" + "</h4></div>" +
+            "<div><h3 style='color: cadetblue'>Following Day</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[2].temp.day + " F" + " <h4> Morning: " + data.list[2].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[2].temp.eve + " F" + "</h4></div>");
+        // $("#today").html(
+        // $("#daytwo").html(" <h3>Tomorrow</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[1].temp.day + " F" + " <h4> Morning: " + data.list[1].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[1].temp.eve + " F" + "</h4>");
+        // $("#daythree").html("<h3>Following Day</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[2].temp.day + " F" + " <h4> Morning: " + data.list[2].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[2].temp.eve + " F" + "</h4>");
     });
 }
 //Auto complete search box//
