@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="weather-map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body>
+  <body>
+    <div class="theInterface container-fluid animated bounceInUp">
+    <h1 class="title">Weather in Your Hood</h1>
+        <div class="col-md-12 col-sm-12" id="location"></div>
+
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        <div id="map" class="col-md-6 col-sm-12"></div>
 
 
-<div class="theInterface container-fluid animated bounceInUp">
-<h1 class="title">Weather in Your Hood</h1>
-    <span class="col-md-4 col-sm-12 col-xs-12" id="location"></span>
+    </div>
 
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map" class="col-md-6 col-sm-12"></div>
-
-
-</div>
-
-
-
-<script
-        src="https://code.jquery.com/jquery-3.1.1.js"
-        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-        crossorigin="anonymous"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6AQFv6obz6rIdx4Q0g166TjobSMR2AdE&libraries=places&callback=initAutocomplete"
-        async defer></script>
-<script src="weathermap.js"></script>
-</body>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6AQFv6obz6rIdx4Q0g166TjobSMR2AdE&libraries=places&callback=initAutocomplete"
+            async defer></script>
+    <script src="weathermap.js"></script>
+  </body>
 </html>

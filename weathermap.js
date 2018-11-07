@@ -4,16 +4,16 @@
 
 //http://api.openweathermap.org/data/2.5/weather   http://api.openweathermap.org/data/2.5/forecast?id={}
 function getLocal(latitude, longitude) {
-    $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+    $.get("//api.openweathermap.org/data/2.5/forecast/daily", {
         APPID: "eda54ecfd2dc648ab68ecd44ce9ecf27",
         lat: latitude,
         lon: longitude,
         units: "imperial"
     }).done(function (data) {
         console.log(data);
-        $("#location").html("<h2 style='color: cadetblue'>Today in </h2>" + "<h3>" + data.city.name + " " + data.city.country+ "</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + " <h4>Temperature: " + data.list[0].temp.day + " F</h4>" + " <h4> Morning: " + data.list[0].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[0].temp.eve + " F" + "</h4>" +
-            "<div><h3 style='color: cadetblue'>Tomorrow</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[1].temp.day + " F" + " <h4> Morning: " + data.list[1].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[1].temp.eve + " F" + "</h4></div>" +
-            "<div><h3 style='color: cadetblue'>Following Day</h3>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[2].temp.day + " F" + " <h4> Morning: " + data.list[2].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[2].temp.eve + " F" + "</h4></div>");
+        $("#location").html("<h2 style='color: cadetblue'>Today in </h2>" + "<h3>" + data.city.name + " " + data.city.country+ "</h3>" + "<img src='//openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + " <h4>Temperature: " + data.list[0].temp.day + " F</h4>" + " <h4> Morning: " + data.list[0].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[0].temp.eve + " F" + "</h4>" +
+            "<div><h3 style='color: cadetblue'>Tomorrow</h3>" + "<img src='//openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[1].temp.day + " F" + " <h4> Morning: " + data.list[1].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[1].temp.eve + " F" + "</h4></div>" +
+            "<div><h3 style='color: cadetblue'>Following Day</h3>" + "<img src='//openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "Temperature: " + data.list[2].temp.day + " F" + " <h4> Morning: " + data.list[2].temp.morn + " F</h4>" + " <h4> Evening: " + data.list[2].temp.eve + " F" + "</h4></div>");
     });
 }
 //Auto complete search box//

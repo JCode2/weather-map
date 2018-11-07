@@ -3,12 +3,13 @@
 body {
     font-family: Roboto, sans-serif;
     font-size: 1.65em;
-    background-image: url("weather.png");
+    background-image: url("stardust.png");
 
 }
 
 .title{
-    color:#404040;
+    color:whitesmoke; /*#404040*/
+    text-align: center;
 }
 
 .theInterface {
@@ -19,11 +20,7 @@ body {
 #location {
     background-color: whitesmoke;
     color: grey;
-    /*margin-left: 35%;*/
-    /*\margin-right: 35%;*/
-    margin-right: 5px;
     padding:auto;
-    /*border-radius: 10%;*/
     font-style: oblique;
 
 }
@@ -31,8 +28,9 @@ body {
 
 #map {
     height: 400px;
-    width: 50%;
+    width: 100%;
     background-color: grey;
+    margin-top: 2%;
 }
 
 #butsearch {
